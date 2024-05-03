@@ -28,8 +28,9 @@ class PhotosController < ApplicationController
 
     the_photo.destroy
 
-    Also 
 
-    render({ :template=> "photo_templates/destroy"})
+    #render({ :template=> "photo_templates/destroy"})
+
+    redirect_to("/photos")
   end
 end
